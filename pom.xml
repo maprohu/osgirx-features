@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.maprohu</groupId>
+    <artifactId>osgirx-features</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>bshrest-preview-deps</module>
+        <module>bshrest-preview</module>
+        <module>all</module>
+    </modules>
+
+    <properties>
+        <bshrest.version>0.1.4-SNAPSHOT</bshrest.version>
+        <akka-http.version>2.0-M2</akka-http.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.karaf.tooling</groupId>
+                <artifactId>karaf-maven-plugin</artifactId>
+                <version>4.0.3</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <aggregateFeatures>true</aggregateFeatures>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>emsa</groupId>
+            <artifactId>wupext-bshrest-preview</artifactId>
+            <version>${bshrest.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
