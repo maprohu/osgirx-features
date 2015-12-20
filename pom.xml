@@ -41,4 +41,17 @@
         </dependency>
     </dependencies>
 
+    <scm>
+        <developerConnection></developerConnection>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>devops</id>
+            <url>https://archiva-maprohu.rhcloud.com/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>devops-snapshots</id>
+            <url>https://archiva-maprohu.rhcloud.com/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
