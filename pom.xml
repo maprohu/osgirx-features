@@ -16,7 +16,7 @@
     </modules>
 
     <properties>
-        <bshrest.version>0.1.4-SNAPSHOT</bshrest.version>
+        <bshrest.version>0.1.4</bshrest.version>
         <akka-http.version>2.0-M2</akka-http.version>
     </properties>
 
@@ -54,4 +54,18 @@
             <url>https://archiva-maprohu.rhcloud.com/repository/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>devops</id>
+            <url>https://archiva-maprohu.rhcloud.com/repository/internal/</url>
+        </repository>
+        <repository>
+            <id>devops-private</id>
+            <url>https://archiva-maprohu.rhcloud.com/repository/private/</url>
+        </repository>
+    </repositories>
+
+
+
 </project>
