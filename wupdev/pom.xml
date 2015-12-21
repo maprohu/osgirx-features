@@ -15,6 +15,44 @@
     <dependencies>
         <dependency>
             <groupId>emsa</groupId>
+            <artifactId>wupext-bshrest</artifactId>
+            <version>${bshrest.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.scala-lang</groupId>
+                    <artifactId>scala-reflect</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.scala-lang</groupId>
+                    <artifactId>scala-library</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.typesafe.akka</groupId>
+                    <artifactId>akka-http-experimental_2.11</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.osgi</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>emsa</groupId>
+            <artifactId>wupext-wupdata</artifactId>
+            <version>${wupdata.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.typesafe.akka</groupId>
+                    <artifactId>akka-http-experimental_2.11</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.osgi</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>emsa</groupId>
             <artifactId>wupext-router</artifactId>
             <version>${wupext-router.version}</version>
             <exclusions>
@@ -40,6 +78,14 @@
                 <exclusion>
                     <groupId>org.osgi</groupId>
                     <artifactId>*</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>de.heikoseeberger</groupId>
+                    <artifactId>akka-http-json4s_2.11</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.json4s</groupId>
+                    <artifactId>json4s-native_2.11</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -92,6 +138,16 @@
                     <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.github.maprohu</groupId>
+            <artifactId>wupdev-deps</artifactId>
+            <version>0.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang.modules</groupId>
+            <artifactId>scala-xml_2.11</artifactId>
+            <version>1.0.5</version>
         </dependency>
     </dependencies>
 

@@ -12,6 +12,7 @@
     <modules>
         <module>bshrest-preview-deps</module>
         <module>bshrest-preview</module>
+        <module>wupdev-deps</module>
         <module>wupdev</module>
         <module>all</module>
     </modules>
@@ -21,6 +22,7 @@
         <wupdev.version>0.1.5-SNAPSHOT</wupdev.version>
         <wupext-router.version>0.1.3-SNAPSHOT</wupext-router.version>
         <wupmodules.version>0.1.4-SNAPSHOT</wupmodules.version>
+        <wupdata.version>0.1.2-SNAPSHOT</wupdata.version>
         <akka-http.version>2.0-M2</akka-http.version>
         <osgirx.version>0.1.3-SNAPSHOT</osgirx.version>
         <wupclient.version>1.6.1-SNAPSHOT</wupclient.version>
