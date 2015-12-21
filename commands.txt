@@ -1,3 +1,5 @@
 repo-add mvn:com.github.maprohu/osgirx-features-all/0.0.0-SNAPSHOT/xml/features
 feature:install bshrest-preview-feature
 feature:uninstall bshrest-preview-feature
+
+feature:install wupdev-feature
